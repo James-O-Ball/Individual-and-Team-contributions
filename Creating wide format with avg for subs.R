@@ -99,4 +99,4 @@ final_data <- final_data[, !(names(final_data) %in% c("avg_ws_rating_sub_home", 
 # View the result
 head(final_data)
 
-write.csv(final_data, "Dataset/wide_player_ratings_with_avg_subs.csv")
+write.csv(final_data, "Dataset/final_data_with_subs.csv")
