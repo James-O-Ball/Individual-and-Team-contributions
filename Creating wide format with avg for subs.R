@@ -2,7 +2,7 @@
 library(tidyverse)
 
 # Load match data
-eng_all_stats <- read.csv("Dataset/prem_example", header = TRUE, stringsAsFactors = FALSE)
+eng_all_stats <- read.csv("Dataset/prem_example.csv", header = TRUE, stringsAsFactors = FALSE)
 ger_all_stats <- read.csv("Dataset/bundesliga_example.csv", header = TRUE, stringsAsFactors = FALSE)
 esp_all_stats <- read.csv("Dataset/laliga_example.csv", header = TRUE, stringsAsFactors = FALSE)
 
