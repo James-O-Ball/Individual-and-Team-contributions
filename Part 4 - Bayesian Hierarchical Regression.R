@@ -8,7 +8,7 @@ library(posterior)
 # Load new wide dataset and prepare baseline long format ------------------
 
 # Load new wide dataset
-final_data_all_players <- read.csv("WhoScored/mins_removed_raw_wide_all_players.csv", header = TRUE, stringsAsFactors = FALSE)
+final_data_all_players <- read.csv("WhoScored/raw_wide_all_players.csv", header = TRUE, stringsAsFactors = FALSE)
 
 # Convert match_id to factor
 base_data <- final_data_all_players %>%
@@ -468,4 +468,5 @@ p_change
 ggsave(
   filename = "figure_change_expected_gd.png",
   plot = p_change, width = 9, height = 6, dpi = 300, bg = "white"
+
 )
