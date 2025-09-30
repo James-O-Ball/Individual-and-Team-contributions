@@ -293,7 +293,7 @@ print(summary_season)
 
 
 # -----------------------
-# Reviewer Comment: Does a standout performance in the home team related to a standout in the away
+# Does a standout performance in the home team related to a standout in the away
 # -----------------------
 # Match-level flags: whether each team had ≥1 standout
 standout_flags <- df_orig %>%
@@ -350,3 +350,4 @@ gk_summary <- standout_outcomes %>%
   mutate(percent = round(n / sum(n) * 100, 1))
 
 print(gk_summary)
+
